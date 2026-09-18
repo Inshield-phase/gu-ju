@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Murphy — personal blog</title>
+<style>
+  :root {
+    --paper: #faf9f6;
+    --ink: #201f1c;
+    --ink-soft: #59564f;
+    --line: #ddd9d0;
+    --accent: #3d5a80;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", "Noto Serif SC", Georgia, "Songti SC", serif;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Header */
+  header {
+    padding: 72px 0 40px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .name {
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+  }
+
+  .tagline {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin: 0 0 28px;
+  }
+
+  nav {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 24px;
+  }
+
+  nav a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.15s ease;
+  }
+
+  nav a:hover, nav a:focus-visible {
+    border-color: var(--accent);
+  }
+
+  /* Sections */
+  section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+    margin: 0 0 32px;
+  }
+
+  /* Posts list */
+  .post {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .post:last-child { border-bottom: none; }
+
+  .post-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+
+  .post-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+
+  .post:hover .post-title,
+  .post:focus-visible .post-title {
+    color: var(--accent);
+  }
+
+  .post-excerpt {
+    font-size: 0.98rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  /* About */
+  .about p {
+    font-size: 1.02rem;
+    margin: 0 0 16px;
+  }
+
+  .about p:last-child { margin-bottom: 0; }
+
+  /* Contact */
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+    font-size: 0.95rem;
+  }
+
+  .contact-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-list li:last-child { border-bottom: none; }
+
+  .contact-list span:first-child {
+    color: var(--ink-soft);
+  }
+
+  .contact-list a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .contact-list a:hover, .contact-list a:focus-visible {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  footer {
+    padding: 40px 0 72px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 480px) {
+    header { padding: 48px 0 32px; }
+    .name { font-size: 1.7rem; }
+    section { padding: 40px 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <p class="name">Murphy</p>
+    <p class="tagline">6767676767676767。</p>
+    <nav>
+      <a href="#posts">article</a>
+      <a href="#about">about</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <section id="posts">
+    <h2>newest article</h2>
+
+    <a class="post" href="#">
+      <p class="post-meta">9178676767</p>
+      <p class="post-title">this is my AI course work creat by claude</p>
+      <p class="post-excerpt">67676767。</p>
+    </a>
+
+    <a class="post" href="#">
+      <p class="post-meta">2026年8月14日</p>
+      <p class="post-title">67676767</p>
+      <p class="post-excerpt">676767676767。</p>
+    </a>
+
+    <a class="post" href="#">
+      <p class="post-meta">2026年7月30日</p>
+      <p class="post-title">6767676767</p>
+      <p class="post-excerpt">676767676767。</p>
+    </a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>about</h2>
+    <p>im Murphy，6767676767676767676767。</p>
+  </section>
+
+  <section id="contact">
+    <h2>67676767</h2>
+    <ul class="contact-list">
+      <li><span>邮箱</span><a href="mailto:murphy@example.com">murphy@example.com</a></li>
+      <li><span>GitHub</span><a href="https://github.com/murphy" target="_blank" rel="noopener">github.com/murphy</a></li>
+      <li><span>Twitter / X</span><a href="https://twitter.com/murphy" target="_blank" rel="noopener">@murphy</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2026 Murphy. 67676767。
+  </footer>
+
+</div>
+
+</body>
+</html>
